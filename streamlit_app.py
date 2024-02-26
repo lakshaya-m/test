@@ -18,8 +18,8 @@ with ZipFile(file_name, 'r') as zip:
 
 st.title('PLANT DISEASE DETECTION')
 st.sidebar.title("PLANT DISEASE DETECTION")
-st.sidebar.caption("Know about your Plant diseases ")
-st.sidebar.markdown("Made by Sudharsan S,MCA,KGISLIIM")
+st.sidebar.caption("Know The Disease Affecting Our Flora")
+st.sidebar.markdown("Made by LAKSHAYA M, MSC IT, Annamalai University")
 st.sidebar.caption("This model is trained with 87k plant diseased leaves ")
 st.sidebar.markdown("'Tomato', 'Grape', 'Orange', 'Soyabean', 'Squash', 'Potato', 'Corn_(maize)', 'Strawberry', 'Peach', 'Apple', 'Blueberry', 'Cherry_(including_sour)', 'Pepper,_bell', 'Raspberry'")
 
@@ -95,7 +95,7 @@ def predict_img(img,model=model):
 uploaded_file = st.file_uploader("", type=['jpg','png','jpeg'])
 if uploaded_file is not None:
 	image = mpimg.imread(uploaded_file)
-	st.image(image, caption='Sunrise by the mountains')
+	st.image(image, caption='Given image')
 	img1 = tf.image.resize(image,(224,224))
 	st.write('# Prediction for the given image:')
 	st.write(predict_img(img1,model))
