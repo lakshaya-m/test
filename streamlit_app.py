@@ -9,7 +9,7 @@ import tensorflow as tf
 from zipfile import ZipFile
   
 # specifying the zip file name
-file_name = "best_plant_model1.zip"
+file_name = "best_plant_model (3).zip"
   
 # opening the zip file in READ mode
 with ZipFile(file_name, 'r') as zip:
